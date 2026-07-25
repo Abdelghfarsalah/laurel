@@ -6,3 +6,30 @@
 .custom-swiper .swiper-pagination-bullet-active {
   background-color: var(--BRAND_PRIMARY) !important;
 }
+
+.slider-wrapper {
+  width: 100%;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  min-height: 12px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--NEUTRAL_L_GREY);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  
+  border-radius: 10px;
+  background-color: var(--BRAND_PRIMARY);
+}

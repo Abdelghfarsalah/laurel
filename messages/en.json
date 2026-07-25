@@ -1,4 +1,10 @@
 {
+  "HomeSlider": {
+    "title": "Lessons and insights",
+    "subtitle": "from 8 years",
+    "description": "Where to grow your business as a photographer: site or social media?",
+    "button": "Register"
+  },
   "HomePage": {
     "title": "Hello world!"
   },

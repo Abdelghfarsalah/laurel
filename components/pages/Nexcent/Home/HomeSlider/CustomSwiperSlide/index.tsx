@@ -10,6 +10,6 @@ export default function CustomSwiperSlide({title,subtitle,description,button,ima
     <p className="text-neutral-grey  text-16 mb-5">{description}</p>
     <CustomButton title={button} width={"w-[128px]"} height={"h-[52px]"} />
   </div>
-  <Image className="hidden sm:block" src={image} width={391} height={407} alt="jhjhmbn" />
+  <Image className="hidden md:block" src={image} width={391} height={407} alt="jhjhmbn" />
   </div>
 }
