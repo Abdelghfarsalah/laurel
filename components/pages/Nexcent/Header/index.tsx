@@ -6,7 +6,7 @@ import HeaderActionButton from "./HeaderActionButton";
 export default function Header(){
     const t = useTranslations("Header");
     
-    return <div className="Header flex justify-between  mr-5 ml-5 pt-5" >
+    return <div className="Header flex justify-between  mr-5 ml-5 pt-5 sticky top-0 bg-background z-10" >
         <Image src={"/images/Logo.png"} width={155} height={24} alt="image not found"/>
         <div className="action w-[41%]  justify-between hidden md:flex">
             <HeaderActionButton color="text-brand-secondary"  title={t("navigation.home")} />

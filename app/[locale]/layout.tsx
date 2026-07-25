@@ -34,7 +34,7 @@ export default  function RootLayout({
       </head>
       <body style={{
         direction:locale==="en"?"ltr":"rtl",
-      }}  className="min-h-full flex flex-col  ">
+      }}  className="min-h-full flex flex-col  dark">
           <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

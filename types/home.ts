@@ -15,3 +15,9 @@ export type CustomSwiperSlidertype={
   button: string;
   image: string;
 };
+
+export type CustomFeatureCardProps = {
+  title: string;
+  description: string;
+  icon: string;
+};

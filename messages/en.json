@@ -8,6 +8,29 @@
   "HomePage": {
     "title": "Hello world!"
   },
+  "HomeClients": {
+    "title": "Our Clients",
+    "description": "We have been working with some Fortune 500+ clients"
+  },
+  "HomeCommunity": {
+    "title1": "Manage your entire community",
+    "title2": "in a single system",
+    "subtitle": "Who is Nextcent suitable for?",
+    "cards": {
+      "membership": {
+        "title": "Membership Organisations",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      },
+      "associations": {
+        "title": "National Associations",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      },
+      "clubs": {
+        "title": "Clubs And Groups",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      }
+    }
+  },
   "Header": {
     "navigation": {
       "home": "Home",
