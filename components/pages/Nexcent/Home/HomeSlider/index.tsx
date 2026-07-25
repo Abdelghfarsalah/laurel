@@ -5,33 +5,48 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import CustomSwiperSlide from "./CustomSwiperSlide";
 import "./slider.css";
 
 export default function Slider() {
-  return (
+    return (
     <Swiper
-      modules={[Pagination]}
-      pagination={{ clickable: true }}
-      slidesPerView={1}
-      loop={true}
-      spaceBetween={0}
-      className="custom-swiper w-full"
-    >
-      <SwiperSlide>
-        sl;oder
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div className="h-[300px] w-full bg-blue-500">
-          Slide 2
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div className="h-[300px] w-full bg-green-500">
-          Slide 3
-        </div>
-      </SwiperSlide>
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+        slidesPerView={1}
+        loop={true}
+        spaceBetween={0}
+        className="custom-swiper w-full ">
+           
+        <SwiperSlide>
+            <CustomSwiperSlide 
+            title="Lessons and insights "
+            subtitle="from 8 years"
+            description="Where to grow your business as a photographer: site or social media?"
+            button="Register"
+            image="/images/Illustration.png"
+            />
+        </SwiperSlide>
+           
+        <SwiperSlide>
+            <CustomSwiperSlide 
+            title="Lessons and insights "
+            subtitle="from 8 years"
+            description="Where to grow your business as a photographer: site or social media?"
+            button="Register"
+            image="/images/Illustration.png"
+            />
+        </SwiperSlide>
+           
+        <SwiperSlide>
+            <CustomSwiperSlide 
+            title="Lessons and insights "
+            subtitle="from 8 years"
+            description="Where to grow your business as a photographer: site or social media?"
+            button="Register"
+            image="/images/Illustration.png"
+            />
+        </SwiperSlide>
     </Swiper>
-  );
+    );    
 }

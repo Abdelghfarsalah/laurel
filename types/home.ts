@@ -8,3 +8,10 @@ export type CustomButtontype={
     height:string
 }
 
+export type CustomSwiperSlidertype={
+  title: string;
+  subtitle: string;
+  description: string;
+  button: string;
+  image: string;
+};
