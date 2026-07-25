@@ -1,0 +1,8 @@
+.custom-swiper .swiper-pagination-bullet {
+  background-color: var(--NEUTRAL_L_GREY) !important;
+  opacity: 1 !important;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: var(--BRAND_PRIMARY) !important;
+}

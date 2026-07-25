@@ -1,5 +1,19 @@
 {
   "HomePage": {
     "title": "Hello world!"
+  },
+  "Header": {
+    "navigation": {
+      "home": "Home",
+      "service": "Service",
+      "feature": "Feature",
+      "product": "Product",
+      "testimonial": "Testimonial",
+      "faq": "FAQ"
+    },
+    "auth": {
+      "login": "Login",
+      "signup": "Sign up"
+    }
   }
 }
