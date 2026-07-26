@@ -11,8 +11,8 @@ import FooterButtonCollection from "./FooterButtonCollection";
 
 export default function Footer(){
     const t = useTranslations("Footer");
-    return <div  className="flex flex-col items-center mt-10 ">
-        
+    return <div  className="flex flex-col items-center mt-15 bg-neutral-silver ">
+
         <p className="text-neutral-d-grey font-bold text-36">Pellentesque suscipit </p>
         <p className="text-neutral-d-grey font-bold text-36 mb-10">fringilla libero eu.</p>
         <CustomButton title={t("cta.button")} width={"w-[178px]"} height={"h-[52px]"} />
