@@ -14,7 +14,7 @@ export default function Slider() {
   const t = useTranslations("HomeSlider");
 
   return (
-    <div className="slider-wrapper">
+    <div className="slider-wrapper bg-neutral-silver pb-2">
       <Swiper
         modules={[Pagination]}
         pagination={{

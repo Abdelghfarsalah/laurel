@@ -9,7 +9,7 @@ export default function Body(){
     const t = useTranslations("Body");
     return <div >
     <HomeBodyCard title={t("card1.title")} subtitle={t("card1.subtitle")} button={t("card1.button")} image={"/images/home/body/Frame 35.png"} />
-    <div className="mt-5 mb-10 ml-20 mr-10 block md:flex justify-between">
+    <div className="mt-5 mb-10 ml-0 mr-0 pt-7 pb-8 block md:flex justify-between pl-20 bg-neutral-silver">
         <div>
             <p className="text-neutral-d-grey font-bold text-36 ">{t("stats.helpingLocal")} </p>
             <p className="text-brand-primary font-bold text-36 ">{t("stats.businessReinvent")} </p>
@@ -23,7 +23,7 @@ export default function Body(){
         </div>
     </div>
     <HomeBodyCard title={t("card2.title")} subtitle={t("card2.subtitle")} button={t("card2.button")} image={"/images/home/body/pana.png"} />
-     <div className="md:flex block justify-center mb-10 ml-5 sm:ml-30">
+    <div className="md:flex block justify-center pb-10 pl-25  bg-neutral-silver">
         <div className="flex justify-center flex-1 ">
             <Image
                 className="w-full h-full object-contain"
