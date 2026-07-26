@@ -39,13 +39,13 @@ export default function Body(){
             <p className="text-14 max-w-[50%] mt-2 mb-4 text-neutral-grey">{t("testimonial.organization")}</p>
             <div className="flex items-center justify-between mr-5 ">
                 <div className="flex flex-wrap  items-center ">
-                    <Image  src={"/images/Clients/Logo.png"}     width={40} height={40}  alt="jhjhmbn" />
-                    <Image className=" ml-6" src={"/images/Clients/Logo (1).png"} width={40} height={40} alt="jhjhmbn" />
-                    <Image className=" ml-6" src={"/images/Clients/Logo (2).png"} width={40} height={40} alt="jhjhmbn" />
-                    <Image className=" ml-6" src={"/images/Clients/Logo (3).png"} width={40} height={40} alt="jhjhmbn" />
-                    <Image className=" ml-6" src={"/images/Clients/Logo (4).png"} width={40} height={40} alt="jhjhmbn" />
-                    <Image className=" ml-6" src={"/images/Clients/Logo (5).png"} width={40} height={40} alt="jhjhmbn" />
-                    <Image className=" ml-6" src={"/images/Clients/Logo (6).png"} width={40} height={40} alt="jhjhmbn" />
+                    <Image  src={"/images/home/Clients/Logo.png"}     width={40} height={40}  alt="jhjhmbn" />
+                    <Image className=" ml-6" src={"/images/home/Clients/Logo (1).png"} width={40} height={40} alt="jhjhmbn" />
+                    <Image className=" ml-6" src={"/images/home/Clients/Logo (2).png"} width={40} height={40} alt="jhjhmbn" />
+                    <Image className=" ml-6" src={"/images/home/Clients/Logo (3).png"} width={40} height={40} alt="jhjhmbn" />
+                    <Image className=" ml-6" src={"/images/home/Clients/Logo (4).png"} width={40} height={40} alt="jhjhmbn" />
+                    <Image className=" ml-6" src={"/images/home/Clients/Logo (5).png"} width={40} height={40} alt="jhjhmbn" />
+                    <Image className=" ml-6" src={"/images/home/Clients/Logo (6).png"} width={40} height={40} alt="jhjhmbn" />
                     </div>
                 <div className="flex items-center ">
                 <p className="text-brand-primary text-20 ">{t("testimonial.meetAll")}</p>

@@ -11,17 +11,17 @@ export default function HomeCommunity(){
             <CustomFeatureCard
             title={t("cards.membership.title")}
             description={t("cards.membership.description")}
-            icon="/images/ComunityIcons/Icon.png"
+            icon="/images/home/ComunityIcons/Icon.png"
             />
             <CustomFeatureCard
             title={t("cards.associations.title")}
             description={t("cards.associations.description")}
-            icon="/images/ComunityIcons/Group 1.png"
+            icon="/images/home/ComunityIcons/Group 1.png"
             />
             <CustomFeatureCard
             title={t("cards.clubs.title")}
             description={t("cards.clubs.description")}
-            icon="/images/ComunityIcons/Icon (1).png"
+            icon="/images/home/ComunityIcons/Icon (1).png"
             />
         </div>
     </div>
