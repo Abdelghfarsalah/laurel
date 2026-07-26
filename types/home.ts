@@ -21,3 +21,10 @@ export type CustomFeatureCardProps = {
   description: string;
   icon: string;
 };
+
+
+export type HomeBodyCardType={
+  title:string ,subtitle:string,button:string ,image:string
+}
+
+export type CountCardtype={image:string ,count:string,description:string}
