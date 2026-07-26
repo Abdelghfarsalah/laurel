@@ -32,9 +32,9 @@ export default  function RootLayout({
         <link rel="alternate" href="https://kompassumzug.ch/ar" hrefLang="ar" />
         <link rel="alternate" href="https://kompassumzug.ch/en" hrefLang="en" />
       </head>
-      <body style={{
-        direction:locale==="en"?"ltr":"rtl",
-      }}  className="min-h-full flex flex-col ">
+      <body 
+      dir={locale === "en" ? "ltr" : "rtl"}
+      className="min-h-full flex flex-col  ">
           <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

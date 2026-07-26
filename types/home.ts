@@ -28,3 +28,9 @@ export type HomeBodyCardType={
 }
 
 export type CountCardtype={image:string ,count:string,description:string}
+
+
+export type FooterButtonCollectionProps = {
+  title: string;
+  buttons: string[];
+};

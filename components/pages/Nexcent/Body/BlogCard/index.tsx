@@ -4,9 +4,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 export default function BlogCard({
   image,
   blog,
+  readMore,
 }: {
   image: string;
   blog: string;
+  readMore: string;
 }) {
   return (
     <div className="relative flex-1 ml-2 mr-3 mb-[100px]  md:mb-0">
@@ -26,7 +28,7 @@ export default function BlogCard({
 
         <div className="mt-3 flex items-center justify-center">
           <p className="text-brand-primary text-20 ">
-            Read more
+            {readMore}
           </p>
 
           <FaArrowRightLong className="ml-5 text-brand-primary" />
