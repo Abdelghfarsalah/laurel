@@ -1,67 +1,22 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useDispatch, useSelector } from "react-redux";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { AnimatePresence, motion } from "framer-motion";
-import { Minus, Plus, Trash2, ShoppingBag, CheckCircle2 } from "lucide-react";
+import { Minus, Plus, Trash2, ShoppingBag, ChevronRight } from "lucide-react";
 import type { RootState } from "@/redux/app/store";
 import {
   removeFromCart,
   updateQuantity,
   clearCart,
 } from "@/redux/features/cart/cartSlice";
-import { checkoutSchema, type CheckoutFormValues } from "@/lib/schemas";
 import { Link } from "@/i18n/navigation";
 
 export default function CartBody() {
   const t = useTranslations("Store.cart");
-  const tc = useTranslations("Store.checkout");
-  const tp = useTranslations("Store.products");
   const dispatch = useDispatch();
   const items = useSelector((s: RootState) => s.cart.items);
-  const [placed, setPlaced] = useState(false);
-
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors, isSubmitting },
-  } = useForm<CheckoutFormValues>({
-    resolver: zodResolver(checkoutSchema),
-    defaultValues: { name: "", email: "", phone: "", address: "", city: "", zip: "" },
-  });
-
-  const subtotal = items.reduce((acc, i) => acc + i.product.price * i.quantity, 0);
-
-  const onSubmit = async () => {
-    await new Promise((r) => setTimeout(r, 900));
-    dispatch(clearCart());
-    setPlaced(true);
-    reset();
-  };
-
-  if (placed) {
-    return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="mx-auto flex max-w-md flex-col items-center gap-4 rounded-3xl border border-brand-primary/30 bg-tint-t5 p-14 text-center dark:bg-shade-s5/30"
-      >
-        <CheckCircle2 className="size-16 text-brand-primary" />
-        <h2 className="text-xl font-bold">{tc("success")}</h2>
-        <Link
-          href="/"
-          className="rounded-full bg-brand-primary px-6 py-2.5 text-sm font-semibold text-white hover:bg-shade-s2"
-        >
-          {t("emptyCta")}
-        </Link>
-      </motion.div>
-    );
-  }
 
   if (items.length === 0) {
     return (
@@ -84,10 +39,7 @@ export default function CartBody() {
     );
   }
 
-  const inputClass = (hasError: boolean) =>
-    `h-11 w-full rounded-xl border bg-background px-4 text-sm outline-none transition focus:border-ring focus:ring-3 focus:ring-ring/30 ${
-      hasError ? "border-red-500" : "border-input"
-    }`;
+  const subtotal = items.reduce((acc, i) => acc + i.product.price * i.quantity, 0);
 
   return (
     <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
@@ -121,7 +73,10 @@ export default function CartBody() {
                 exit={{ opacity: 0, x: -40 }}
                 className="flex gap-4 rounded-2xl border border-neutral-l-grey/20 p-3 sm:p-4"
               >
-                <div className="relative size-20 shrink-0 overflow-hidden rounded-xl bg-neutral-silver sm:size-24 dark:bg-white/5">
+                <Link
+                  href={`/products/${product.category}/${product.id}`}
+                  className="relative size-20 shrink-0 overflow-hidden rounded-xl bg-neutral-silver sm:size-24 dark:bg-white/5"
+                >
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -130,10 +85,15 @@ export default function CartBody() {
                     sizes="96px"
                     className="object-contain p-1"
                   />
-                </div>
+                </Link>
 
                 <div className="flex min-w-0 flex-1 flex-col justify-between gap-2 py-0.5">
-                  <p className="line-clamp-2 text-sm font-medium">{product.name}</p>
+                  <Link
+                    href={`/products/${product.category}/${product.id}`}
+                    className="line-clamp-2 text-sm font-medium transition-colors hover:text-brand-primary"
+                  >
+                    {product.name}
+                  </Link>
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="font-bold text-shade-s2 dark:text-brand-primary">
                       {product.priceLabel || `₹${product.price}`}
@@ -199,43 +159,20 @@ export default function CartBody() {
           </div>
         </dl>
 
-        <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-3 pt-2">
-          <h3 className="font-bold">{tc("title")}</h3>
-          <div>
-            <input {...register("name")} placeholder={tc("name")} className={inputClass(!!errors.name)} />
-            {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name.message}</p>}
-          </div>
-          <div>
-            <input {...register("email")} type="email" placeholder={tc("email")} className={inputClass(!!errors.email)} />
-            {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>}
-          </div>
-          <div>
-            <input {...register("phone")} placeholder={tc("phone")} className={inputClass(!!errors.phone)} />
-            {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone.message}</p>}
-          </div>
-          <div>
-            <input {...register("address")} placeholder={tc("address")} className={inputClass(!!errors.address)} />
-            {errors.address && <p className="mt-1 text-xs text-red-500">{errors.address.message}</p>}
-          </div>
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <input {...register("city")} placeholder={tc("city")} className={inputClass(!!errors.city)} />
-              {errors.city && <p className="mt-1 text-xs text-red-500">{errors.city.message}</p>}
-            </div>
-            <div>
-              <input {...register("zip")} placeholder={tc("zip")} className={inputClass(!!errors.zip)} />
-              {errors.zip && <p className="mt-1 text-xs text-red-500">{errors.zip.message}</p>}
-            </div>
-          </div>
-          <motion.button
-            whileTap={{ scale: 0.97 }}
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full rounded-full bg-brand-primary py-3 text-sm font-semibold text-white shadow-lg shadow-brand-primary/25 transition-colors hover:bg-shade-s2 disabled:opacity-60"
+        <motion.div whileTap={{ scale: 0.98 }}>
+          <Link
+            href="/checkout"
+            className="flex w-full items-center justify-center gap-2 rounded-full bg-brand-primary py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-primary/25 transition-colors hover:bg-shade-s2"
           >
-            {isSubmitting ? tp("added") : tc("placeOrder")}
-          </motion.button>
-        </form>
+            {t("checkoutCta")}
+            <ChevronRight className="size-4 rtl:-scale-x-100" />
+          </Link>
+        </motion.div>
+
+        <p className="flex items-center justify-center gap-1.5 text-xs text-neutral-grey">
+          <ShoppingBag className="size-3.5" />
+          {t("secureNote")}
+        </p>
       </aside>
     </div>
   );

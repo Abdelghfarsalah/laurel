@@ -31,6 +31,17 @@ export const checkoutSchema = z.object({
 
 export type CheckoutFormValues = z.infer<typeof checkoutSchema>;
 
+export const cardSchema = z.object({
+  cardNumber: z
+    .string()
+    .regex(/^\d{13,19}$/, "Enter a valid card number")
+    .transform((v) => v.replace(/\s/g, "")),
+  expiry: z.string().regex(/^(0[1-9]|1[0-2])\/\d{2}$/, "Use MM/YY format"),
+  cvc: z.string().regex(/^\d{3,4}$/, "Enter a valid CVC"),
+});
+
+export type CardFormValues = z.infer<typeof cardSchema>;
+
 export const newsletterSchema = z.object({
   email: z.email("Enter a valid email address"),
 });

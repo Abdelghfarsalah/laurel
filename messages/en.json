@@ -9,7 +9,17 @@
       "shop": "Shop",
       "contact": "Contact",
       "cart": "Cart",
-      "login": "Log in"
+      "login": "Log in",
+      "wishlist": "Wishlist",
+      "orders": "My Orders",
+      "profile": "Profile"
+    },
+    "theme": {
+      "toDark": "Switch to dark mode",
+      "toLight": "Switch to light mode"
+    },
+    "language": {
+      "switch": "Switch language"
     },
     "hero": {
       "badge": "New season drop",
@@ -38,8 +48,60 @@
       "empty": "No products match your search.",
       "addToCart": "Add to cart",
       "added": "Added!",
+      "addToWishlist": "Add to wishlist",
+      "removeFromWishlist": "Remove from wishlist",
       "error": "Failed to load products. Please try again.",
       "retry": "Retry"
+    },
+    "filters": {
+      "title": "Filters",
+      "brand": "Brand",
+      "allBrands": "All brands",
+      "priceFrom": "From",
+      "priceTo": "To",
+      "clear": "Clear filters"
+    },
+    "details": {
+      "breadcrumbHome": "Home",
+      "notFound": "This product could not be found.",
+      "backToCategory": "Back to category",
+      "noDescription": "No description available for this product yet.",
+      "decreaseQuantity": "Decrease quantity",
+      "increaseQuantity": "Increase quantity",
+      "addToCart": "Add to cart",
+      "buyNow": "Buy now",
+      "addToWishlist": "Add to wishlist",
+      "removeFromWishlist": "Remove from wishlist",
+      "freeShipping": "Free shipping",
+      "easyReturns": "30-day returns",
+      "securePayment": "Secure payment",
+      "relatedTitle": "You may also like"
+    },
+    "reviews": {
+      "title": "Customer reviews",
+      "basedOn": "{count} reviews",
+      "items": {
+        "review1": {
+          "name": "Ahmed M.",
+          "date": "2026-05-12",
+          "text": "Excellent quality for the price. Delivery was faster than expected and the packaging was solid."
+        },
+        "review2": {
+          "name": "Sarah K.",
+          "date": "2026-06-03",
+          "text": "Exactly as described. I compared prices everywhere and this was the best deal by far."
+        },
+        "review3": {
+          "name": "Omar T.",
+          "date": "2026-07-21",
+          "text": "Good value overall. Works perfectly, though I would have liked more color options."
+        },
+        "review4": {
+          "name": "Lina H.",
+          "date": "2026-08-02",
+          "text": "Great experience from order to delivery. Customer support answered my questions quickly."
+        }
+      }
     },
     "cart": {
       "title": "Your Cart",
@@ -50,18 +112,81 @@
       "shipping": "Shipping",
       "free": "Free",
       "total": "Total",
-      "clear": "Clear cart"
+      "clear": "Clear cart",
+      "checkoutCta": "Proceed to checkout",
+      "secureNote": "Secure checkout — your data is protected."
     },
     "checkout": {
-      "title": "Delivery details",
+      "title": "Checkout",
       "name": "Full name",
       "email": "Email",
       "phone": "Phone",
       "address": "Address",
       "city": "City",
       "zip": "ZIP code",
+      "payment": "Payment method",
+      "cod": "Cash on delivery",
+      "card": "Credit / debit card",
+      "paypal": "PayPal",
+      "cardNumber": "Card number",
+      "expiry": "MM/YY",
+      "cvc": "CVC",
+      "secureNote": "Payments are encrypted end-to-end. This is a demo — no real charge is made.",
+      "summary": "Order summary",
+      "backToCart": "Back to cart",
       "placeOrder": "Place order",
+      "processing": "Processing...",
       "success": "Order placed successfully!"
+    },
+    "wishlist": {
+      "title": "My Wishlist",
+      "count": "items",
+      "empty": "Your wishlist is empty",
+      "emptyHint": "Tap the heart on any product to save it here for later.",
+      "emptyCta": "Discover products",
+      "remove": "Remove from wishlist"
+    },
+    "search": {
+      "title": "Search",
+      "loading": "Searching all categories...",
+      "prompt": "Type something in the search box to find products across the whole store."
+    },
+    "orders": {
+      "title": "My Orders",
+      "countLabel": "orders",
+      "orderLabel": "Order",
+      "empty": "No orders yet",
+      "emptyCta": "Start shopping",
+      "loginRequired": "Log in to see your orders",
+      "loginHint": "Your order history is tied to your NovaMart account.",
+      "status": {
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "delivered": "Delivered"
+      }
+    },
+    "profile": {
+      "title": "My Profile",
+      "edit": "Edit profile",
+      "save": "Save changes",
+      "statsOrders": "Orders",
+      "statsWishlist": "Wishlist",
+      "statsCart": "In cart",
+      "quickLinks": "Quick links",
+      "myOrders": "My orders",
+      "myWishlist": "My wishlist",
+      "loginRequired": "Log in to view your profile",
+      "loginHint": "Sign in to manage your details, orders and wishlist."
+    },
+    "toasts": {
+      "addedToCart": "Added to cart",
+      "addedToWishlist": "Added to wishlist",
+      "removedFromWishlist": "Removed from wishlist",
+      "orderPlaced": "Order placed successfully!",
+      "loggedIn": "Welcome back!",
+      "loggedOut": "You have been logged out",
+      "profileUpdated": "Profile updated",
+      "dismiss": "Dismiss"
     },
     "contact": {
       "title": "Get in touch",
@@ -114,6 +239,7 @@
       "brandTitle": "Shop smarter,\nnot harder.",
       "brandText": "One account for thousands of products across electronics, fashion, watches, books and more.",
       "loggedOut": "Logged out",
+      "logout": "Log out",
       "rememberMe": "Remember me",
       "forgotPassword": "Forgot password?",
       "resetTitle": "Reset your password",

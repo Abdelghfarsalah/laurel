@@ -8,11 +8,13 @@ import { motion } from "framer-motion";
 import { LogIn } from "lucide-react";
 import { Link, useRouter } from "@/i18n/navigation";
 import { loginSuccess } from "@/redux/features/auth/authSlice";
+import { pushToast } from "@/redux/features/ui/uiSlice";
 import { loginSchema, type LoginFormValues } from "@/lib/schemas";
 import { PasswordField, fieldClass, SubmitButton } from "../fields";
 
 export default function LoginBody() {
   const t = useTranslations("Store.auth");
+  const tt = useTranslations("Store.toasts");
   const dispatch = useDispatch();
   const router = useRouter();
   const {
@@ -28,6 +30,7 @@ export default function LoginBody() {
     await new Promise((r) => setTimeout(r, 800));
     const name = email.split("@")[0] || "Customer";
     dispatch(loginSuccess({ name, email }));
+    dispatch(pushToast({ message: tt("loggedIn") }));
     router.push("/");
   });
 
