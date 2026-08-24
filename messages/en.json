@@ -1,108 +1,178 @@
 {
-  "HomeSlider": {
-    "title": "Lessons and insights",
-    "subtitle": "from 8 years",
-    "description": "Where to grow your business as a photographer: site or social media?",
-    "button": "Register"
-  },
   "HomePage": {
     "title": "Hello world!"
   },
-  "HomeClients": {
-    "title": "Our Clients",
-    "description": "We have been working with some Fortune 500+ clients"
-  },
-  "HomeCommunity": {
-    "title1": "Manage your entire community",
-    "title2": "in a single system",
-    "subtitle": "Who is Nextcent suitable for?",
-    "cards": {
-      "membership": {
-        "title": "Membership Organisations",
-        "description": "Our membership management software provides full automation of membership renewals and payments"
-      },
-      "associations": {
-        "title": "National Associations",
-        "description": "Our membership management software provides full automation of membership renewals and payments"
-      },
-      "clubs": {
-        "title": "Clubs And Groups",
-        "description": "Our membership management software provides full automation of membership renewals and payments"
-      }
-    }
-  },
-  "Body": {
-    "card1": {
-      "title": "The unseen of spending three years at Pixelgrade",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.",
-      "button": "Learn More"
-    },
-    "stats": {
-      "helpingLocal": "Helping a local",
-      "businessReinvent": "business reinvent itself",
-      "reachedHere": "We reached here with our hard work and dedication",
-      "members": "Members",
-      "clubs": "Clubs",
-      "eventBookings": "Event Bookings",
-      "payments": "Payments"
-    },
-    "card2": {
-      "title": "How to design your site footer like we did",
-      "subtitle": "Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.",
-      "button": "Learn More"
-    },
-    "testimonial": {
-      "quote": "Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.",
-      "name": "Tim Smith",
-      "organization": "British Dragon Boat Racing Association",
-      "meetAll": "Meet all customers"
-    },
-    "blog": {
-      "title": "Caring is the new marketing",
-      "description": "The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who s joining the community, read about how our community are increasing their membership income and lot s more.​",
-      "card1": "Creating Streamlined Safeguarding Processes with OneRen",
-      "card2": "What are your safeguarding responsibilities and how can you manage them?",
-      "card3": "Revamping the Membership Model with Triathlon Australia",
-      "readMore": "Read more"
-    }
-  },
-  "Footer": {
-    "cta": {
-      "button": "Get a Demo →"
-    },
-    "company": {
-      "title": "Company",
-      "aboutUs": "About us",
-      "blog": "Blog",
-      "contactUs": "Contact us",
-      "pricing": "Pricing",
-      "testimonials": "Testimonials"
-    },
-    "support": {
-      "title": "Support",
-      "helpCenter": "Help center",
-      "termsOfService": "Terms of service",
-      "legal": "Legal",
-      "privacyPolicy": "Privacy policy",
-      "status": "Status"
-    },
-    "stayUpdated": {
-      "title": "Stay up to date",
-      "emailPlaceholder": "Your email address"
-    }
-  },
-  "Header": {
-    "navigation": {
+  "Store": {
+    "brand": "NovaMart",
+    "nav": {
       "home": "Home",
-      "service": "Service",
-      "feature": "Feature",
-      "product": "Product",
-      "testimonial": "Testimonial",
-      "faq": "FAQ"
+      "shop": "Shop",
+      "contact": "Contact",
+      "cart": "Cart",
+      "login": "Log in"
+    },
+    "hero": {
+      "badge": "New season drop",
+      "title": "Everything you love,",
+      "titleAccent": "in one place",
+      "subtitle": "From cutting-edge tech to everyday essentials — shop thousands of products across 10 curated categories.",
+      "cta": "Start shopping",
+      "secondary": "Browse categories"
+    },
+    "categories": {
+      "title": "Shop by category",
+      "subtitle": "Ten departments, one seamless experience."
+    },
+    "featured": {
+      "title": "Featured picks",
+      "subtitle": "Hand-selected deals from our most loved departments.",
+      "viewAll": "View all"
+    },
+    "products": {
+      "searchPlaceholder": "Search products...",
+      "sortBy": "Sort by",
+      "sortDefault": "Featured",
+      "sortPriceLow": "Price: Low to High",
+      "sortPriceHigh": "Price: High to Low",
+      "results": "products",
+      "empty": "No products match your search.",
+      "addToCart": "Add to cart",
+      "added": "Added!",
+      "error": "Failed to load products. Please try again.",
+      "retry": "Retry"
+    },
+    "cart": {
+      "title": "Your Cart",
+      "items": "items",
+      "empty": "Your cart is empty",
+      "emptyCta": "Browse products",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "free": "Free",
+      "total": "Total",
+      "clear": "Clear cart"
+    },
+    "checkout": {
+      "title": "Delivery details",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "city": "City",
+      "zip": "ZIP code",
+      "placeOrder": "Place order",
+      "success": "Order placed successfully!"
+    },
+    "contact": {
+      "title": "Get in touch",
+      "subtitle": "Have a question about your order or our store? Send us a message and we'll get back within 24 hours.",
+      "name": "Full name",
+      "email": "Email address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Thanks! Your message has been sent."
+    },
+    "footer": {
+      "tagline": "Modern shopping for everything you need.",
+      "shopTitle": "Shop",
+      "supportTitle": "Support",
+      "faq": "FAQ",
+      "shipping": "Shipping & Returns",
+      "terms": "Terms of service",
+      "privacy": "Privacy policy",
+      "newsletterTitle": "Stay up to date",
+      "newsletterSubtitle": "Subscribe for exclusive offers and new arrivals.",
+      "newsletterPlaceholder": "Your email address",
+      "subscribe": "Subscribe",
+      "subscribed": "Subscribed!",
+      "rights": "All rights reserved."
     },
     "auth": {
-      "login": "Login",
-      "signup": "Sign up"
+      "loginTab": "Log in",
+      "signupTab": "Sign up",
+      "loginTitle": "Welcome back",
+      "loginSubtitle": "Log in to your NovaMart account to continue shopping.",
+      "signupTitle": "Create your account",
+      "signupSubtitle": "Join NovaMart and unlock a world of products.",
+      "name": "Full name",
+      "email": "Email address",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "submitLogin": "Log in",
+      "submitSignup": "Create account",
+      "submitting": "Please wait...",
+      "toSignup": "Don't have an account?",
+      "toSignupLink": "Sign up",
+      "toLogin": "Already have an account?",
+      "toLoginLink": "Log in",
+      "forgotTitle": "Reset your password",
+      "forgotSubtitle": "Enter your email address and we'll send you a link to reset your password.",
+      "submitForgot": "Send reset link",
+      "forgotSent": "If an account exists for {email}, you'll receive a reset link shortly.",
+      "brandTitle": "Shop smarter,\nnot harder.",
+      "brandText": "One account for thousands of products across electronics, fashion, watches, books and more.",
+      "loggedOut": "Logged out",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "resetTitle": "Reset your password",
+      "resetSubtitle": "Enter your email address and we'll send you a link to reset your password.",
+      "submitReset": "Send reset link",
+      "backToLogin": "Back to log in",
+      "agreeTerms": "I agree to the"
+    },
+    "help": {
+      "backToSupport": "Back to support",
+      "faq": {
+        "title": "Frequently asked questions",
+        "subtitle": "Quick answers to the most common questions about orders, shipping and returns."
+      },
+      "shipping": {
+        "title": "Shipping & Returns",
+        "subtitle": "Everything you need to know about delivery options and our return policy."
+      },
+      "terms": {
+        "title": "Terms of service",
+        "subtitle": "The rules and agreements that govern your use of NovaMart."
+      },
+      "privacy": {
+        "title": "Privacy policy",
+        "subtitle": "How we collect, use and protect your personal information."
+      }
+    },
+    "support": {
+      "title": "How can we help?",
+      "subtitle": "Find answers about orders, shipping and our policies — all in one place.",
+      "faq": "FAQ",
+      "shipping": "Shipping & Returns",
+      "terms": "Terms of service",
+      "privacy": "Privacy policy",
+      "contact": "Contact us",
+      "faq1q": "How long does delivery take?",
+      "faq1a": "Standard delivery takes 3-5 business days. Express delivery arrives within 1-2 business days in most metro areas.",
+      "faq2q": "Can I track my order?",
+      "faq2a": "Yes! Once your order ships, you'll receive an email with a tracking link you can follow in real time.",
+      "faq3q": "What payment methods do you accept?",
+      "faq3a": "We accept all major credit cards, PayPal, Apple Pay and Google Pay.",
+      "faq4q": "How do I return an item?",
+      "faq4a": "Start a return from your account within 30 days of delivery. We'll send you a prepaid label — returns are free.",
+      "faq5q": "Do you ship internationally?",
+      "faq5a": "Currently we ship to over 40 countries. Available destinations appear at checkout.",
+      "faq6q": "Is my payment information secure?",
+      "faq6a": "Absolutely. All payments are processed over encrypted connections and we never store card details.",
+      "shippingBody1": "We offer free standard shipping on all orders over $50. Orders below that threshold ship for a flat $4.99 fee.",
+      "shippingBody2": "Not happy with your purchase? Return any item within 30 days of delivery for a full refund. Items must be unused and in original packaging. Refunds are issued to your original payment method within 5-7 business days after we receive the return.",
+      "termsIntro": "By using NovaMart you agree to the following terms:",
+      "termsItem1": "Products are sold subject to availability; prices may change without notice.",
+      "termsItem2": "Accounts must provide accurate and current information.",
+      "termsItem3": "Abusive behaviour towards staff or other customers may result in account suspension.",
+      "termsItem4": "All website content, including imagery and copy, is the property of NovaMart.",
+      "privacyBody1": "We collect only the information necessary to process your orders: name, contact details and shipping address.",
+      "privacyBody2": "We never sell your personal data. Analytics are anonymised and used solely to improve the shopping experience. You may request deletion of your data at any time by contacting support.",
+      "contactCtaTitle": "Still need help?",
+      "contactCtaText": "Our team replies within 24 hours.",
+      "contactCtaButton": "Contact us"
     }
   }
 }

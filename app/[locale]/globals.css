@@ -37,6 +37,16 @@
   --color-button-header-color:var(--button-header-color);
 }
 
+@theme {
+  --animate-shimmer: shimmer 1.8s infinite;
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+
 :root {
   --NEUTRAL_WHITE: #ffffff;
   --NEUTRAL_SILVER: #F5F7FA;
