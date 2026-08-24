@@ -17,12 +17,8 @@ export default function GlobalNotFound() {
           <p className="max-w-md text-sm text-neutral-grey">
             The page you are looking for does not exist or may have been moved.
           </p>
-          <a
-            href="/"
-            className="rounded-full bg-brand-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-shade-s2"
-          >
-            Back to store
-          </a>
+          
+          
         </main>
       </body>
     </html>
